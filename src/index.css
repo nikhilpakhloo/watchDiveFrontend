@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "MontserratBold";
+    src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Josefin-SansBold";
+  src: url("./fonts/JosefinSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Josefin-SansRegular";
+  src: url("./fonts/JosefinSans-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Josefin-SansMedium";
+    src: url("./fonts/JosefinSans-Medium.ttf") format("truetype");
+  }
+.MontserratRegular {
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 35.374px; 
+    font-style: normal;
+}
+.MontserratBold{
+    font-family: "MontserratBold";
+    font-weight: 700;
+}
+.JosefinSansRegular {
+  font-family: "Josefin-SansRegular";
+  font-weight: 400;
+  line-height: 28.8px;
+  font-style: normal;
+}
+.JosefinSansBold {
+  font-family: "Josefin-SansBold";
+  font-style: normal;
+  font-weight: 700;
+
+}
+.JosefinSansMedium {
+    font-family: "Josefin-SansMedium";
+    font-style: normal;
+    font-weight:500;
+    line-height: 28.8px; 
+}
+
+
+::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+html {
+  scroll-behavior: smooth;
+}
