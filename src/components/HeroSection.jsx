@@ -6,6 +6,7 @@ import watch1 from "../assets/watch.png";
 import watch2 from "../assets/PNG 1000X1000 08.png";
 import watch3 from "../assets/PNG 1000X1000 09.png";
 import HamburgerIcon from "../assets/hamburgerIcon.svg";
+import whiteCloseIcon from "../assets/whiteCloseIcon.svg"
 
 const HeroSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const HeroSection = () => {
           <img src={logo} alt="" width={200} height={50} />
         </div>
         <div className="md:flex md:justify-center hidden mt-[8px] xl:mt-0">
-          <ul className="flex gap-[43px] text-white  ">
+          <ul className="flex gap-[43px] text-white  z-10 ">
             <a href="#home">
               {" "}
               <li className="cursor-pointer JosefinSansRegular text-[14px] hover:JosefinSansMedium uppercase  hover:underline underline-offset-8  decoration-[#27A6E2]  ">
@@ -66,13 +67,25 @@ const HeroSection = () => {
           </ul>
         </div>
         <div className="md:hidden flex justify-end w-full relative   ">
-          <img
+          {!isOpen ?  <img
             src={HamburgerIcon}
             alt="Menu"
             className="cursor-pointer "
             width={28}
             onClick={toggleHamburger}
-          />
+          />:
+        <img
+        src={whiteCloseIcon}
+        alt="close"
+        className="cursor-pointer "
+        width={28}
+        onClick={toggleHamburger}
+        
+        />
+          
+          
+          }
+        
           {isOpen && (
             <div className=" h-[250px] w-[200px] absolute right-0  z-10 top-10 rounded-md flex" style={{backgroundColor:"rgba(255, 255, 255, .25)"}}>
               <ul className="flex gap-2 text-white flex-col items-center w-full justify-center  ">

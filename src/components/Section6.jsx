@@ -13,7 +13,7 @@ const Section6 = () => {
   };
   return (
     <section className="w-full mt-24 xl:flex xl:flex-row flex-col-reverse  ">
-      <div className="xl:w-1/2 xl:px-20 px-10 h-[650px] bg-gradient-to-r from-[#05084D] to-[#1e22a0] flex justify-center flex-col  gap-[40px]">
+      <div className="xl:w-1/2 px-2 xl:px-20 md:px-10 h-[650px] bg-gradient-to-r from-[#05084D] to-[#1e22a0] flex justify-center flex-col  md:gap-[40px]">
         <h1 className="text-white JosefinSansBold text-[50px] leading-[60px] xl:text-start text-center">
           Unveiling the Ultimate Adventure with Precision Dive Gear!
         </h1>

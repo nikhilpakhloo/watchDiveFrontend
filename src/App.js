@@ -17,6 +17,7 @@ import Section13 from './components/Section13';
 import Section14 from './components/Section14';
 import Section15 from './components/Section15';
 import Section16 from './components/Section16';
+import Section17 from './components/Section17';
 import Footer from './components/Footer';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
      <Section14/>
     <Section15/>
      <Section16/>
+     <Section17/>
     <Footer/>              
      
 

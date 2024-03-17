@@ -29,7 +29,7 @@ const Section11 = () => {
   return (
     <section className="mt-24 w-full">
       <div className="relative flex flex-col  items-center">
-        <img src={banner} alt="" />
+        <img src={banner} alt=""  className=""/>
         <h1 className="JosefinSansBold text-[50px] leading-[60px] text-[#0F1D46] text-center absolute xl:mt-44 mt-24 ">
           Waterproof <span className="text-[#00ACE5]">Testing</span>{" "}
         </h1>
