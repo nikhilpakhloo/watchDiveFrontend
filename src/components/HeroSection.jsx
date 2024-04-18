@@ -1,18 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import img from "../assets/Banner.png";
 
 import logo from "../assets/Diverselogo.svg";
 import watch1 from "../assets/watch.png";
-import watch2 from "../assets/PNG 1000X1000 08.png";
-import watch3 from "../assets/PNG 1000X1000 09.png";
+import watch2 from "../assets/watch 2.png"
+import watch3 from "../assets/watch 3.png"
+
 import HamburgerIcon from "../assets/hamburgerIcon.svg";
 import whiteCloseIcon from "../assets/whiteCloseIcon.svg"
 
 const HeroSection = () => {
+  const [currentImage, setCurrentImage] = useState(watch1);
+  const images = [watch1, watch2, watch3]; 
+  const [slideEffect, setSlideEffect] = useState('');
+
+
+
   const [isOpen, setIsOpen] = useState(false);
   const toggleHamburger = () => {
     setIsOpen((prev) => !prev);
   };
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setSlideEffect(''); 
+      setTimeout(() => { 
+        setCurrentImage((prevImage) => {
+          const index = images.indexOf(prevImage);
+          return images[(index + 1) % images.length];
+        });
+        setSlideEffect('slide-in-right'); 
+      }, 100);
+    }, 4000); 
+
+    return () => clearInterval(intervalId); 
+  }, []);
   return (
     <div id="home" className="relative   ">
       <img
@@ -22,7 +43,7 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[rgba(5,8,77,0.6)] via-transparent to-[rgba(5,8,77,0.6)]"></div>
 
-      <header className="flex xl:flex xl:flex-row  md:justify-center  md:flex-col  w-full xl:justify-between   xl:items-center px-5 md:px-20 absolute top-[30px] ">
+      <header className="flex xl:flex xl:flex-row  md:justify-center  md:flex-col  w-full xl:justify-between   xl:items-center px-5 md:px-[130px] absolute top-[30px] ">
         <div className="w-auto h-[50px] flex md:justify-center ">
           <img src={logo} alt="" width={200} height={50} />
         </div>
@@ -154,7 +175,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="xl:w-1/2 flex  ">
-          <img src={watch1} alt="" className="flex-shrink-0" />
+        <img src={currentImage} alt="" className={`flex-shrink-0 ${slideEffect}`} />
         </div>
       </main>
     </div>

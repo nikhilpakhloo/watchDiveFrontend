@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <section className="xl:mt-24 w-full relative  ">
       <img src={isMobile?BannerMobile:banner} alt="" className="md:h-full w-full" />
-      <div className="absolute inset-y-[20%] md:inset-y-[30%] xl:inset-y-1/2 px-5 md:px-10  md:px-20  xl:px-[150px] md:flex gap-20">
+      <div className="absolute inset-y-[20%] md:inset-y-[30%] xl:inset-y-1/2 px-5 md:px-5  xl:px-[150px] md:flex gap-20">
         <div className="flex flex-col gap-[30px] w-[287px] ">
           <img src={DiveroidIcon} alt="" height={30} width={190} />
           <p className="text-white text-[16px] leading-[30px] MontserratRegular">

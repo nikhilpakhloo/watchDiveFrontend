@@ -45,7 +45,7 @@ const Section7 = () => {
 
       <div className='md:flex md:flex-row flex flex-col gap-10  md:gap-8 md:my-10 md:px-20 md:w-[80%] w-full justify-center items-center md:h-[400px]   md:overflow-hidden md:overflow-x-auto   group '>
         {Data.map((item, index)=>(
-               <div key={index} className='cursor-pointer w-[270px] h-[345px] shadow-md flex flex-col items-center justify-around gap-3  flex-shrink-0 md:group-hover:-translate-x-full transition-all duration-[2000ms] '>
+               <div key={index} className='cursor-pointer w-[270px] h-[345px] shadow-md flex flex-col items-center justify-around gap-3  flex-shrink-0 md:group-hover:-translate-x-full md:group-hover:shadow-lg md:group-hover:scale-105  md:translate-x-96 transition-all duration-[3000ms] '>
                <img src={item.icon} alt="" />
                <p className='MontserratBold text-[24px] text-[#0F1D46] leading-[31.2px] px-10 text-center'>{item.tag}</p>
    

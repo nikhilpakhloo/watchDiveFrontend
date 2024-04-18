@@ -26,10 +26,10 @@ const Section1 = () => {
         <section id="benifits" className='flex justify-center items-center xl:px-[150px]  mt-24'>
         <div className='flex flex-wrap justify-center  gap-8  '>
             {cards.map((card, index) => (
-                <div key={index} className='w-[367px] xl:h-[425px] flex flex-col items-center gap-[18px] '>
+                <div key={index} className='w-[367px] xl:h-[425px] flex flex-col items-center gap-[20px] '>
                     <img src={card.icon} alt="" />
                     <h1 className='text-[24px] leading-[28.8px] MontserratBold text-[#05084D] text-center'>{card.heading}</h1>
-                    <p className='MontserratRegular text-[16px] leading-[30px] text-center text-[#05084D] px-10'>{card.paragraph}</p>
+                    <p className='MontserratRegular text-[16px] leading-[30px] text-center text-[#05084D] '>{card.paragraph}</p>
                 </div>
             ))}
         </div>

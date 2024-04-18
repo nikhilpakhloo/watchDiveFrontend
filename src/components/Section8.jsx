@@ -4,7 +4,7 @@ import circle from "../assets/circle.png"
 import watchmini from "../assets/watchmini.png"
 const Section8 = () => {
   return (
-    <section className=" w-full md:px-20 xl:flex gap-10 mt-24">
+    <section className=" w-full md:px-[150px] xl:flex gap-10 mt-24">
       <div className=" xl:w-1/2 flex flex-col gap-[50px] justify-center">
         <h1 className="JosefinSansBold text-[#0F1D46] text-[50px] leading-[60px] xl:text-start text-center ">
           Use Any <span className="text-[#26A8E2]">Smartphone</span>

@@ -16,7 +16,7 @@ const Section2 = () => {
         <div className="xl:w-1/2  flex  flex-col gap-[20px]  xl:text-start text-center mt-4 ">
            
             <p className="text-[#05084D] text-[16px] MontserratRegular ">
-            Buying a diving computer, compass, and separate  equipment for your dive can get pricey over time and not  to mention they are very bulky and can weigh you down while diving. <span className="text-[#26A8E2] MontserratBold">At DIVEROID,</span> we thought of bringing the  convenience of having a smartphone always on hand, with the technology of monitoring your dive. Our product <br /> includes a dive computer, compass, and logbook all in the  palm of your hand. 
+            Buying a diving computer, compass, and separate  equipment for your dive can get pricey over time and not  to mention they are very bulky and can weigh you down while diving. <span className="text-[#26A8E2] MontserratBold">At DIVEROID,</span> we thought of bringing the  convenience of having a smartphone always on hand, with the technology of monitoring your dive. Our product  includes a dive computer, compass, and logbook all in the  palm of your hand. 
             </p>
             <div className="xl:text-start text-center">
             <button className='bg-[#27A6E2] w-[263px] h-[65px] rounded-md'>
